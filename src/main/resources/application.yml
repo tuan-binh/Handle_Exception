@@ -6,8 +6,8 @@ spring:
         import: env-dev.yml
     datasource:
         url: jdbc:mysql://localhost:3306/handle_exception?createDatabaseIfNotExist=true
-        password: ${password}
-        username: ${root}
+        password: ${spring.datasource.password}
+        username: ${spring.datasource.root}
     jpa:
         hibernate:
             ddl-auto: update
